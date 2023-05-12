@@ -51,7 +51,7 @@ body{
     align-self: flex-start;
     justify-content: 'center';
     align-items: center;
-    width: 100%;
+    width: 100vw;
 }
 
 /* this is for my image so it doesn't change size when we are pressing the buttons */
