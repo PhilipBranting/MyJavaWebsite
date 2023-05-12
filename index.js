@@ -1,6 +1,6 @@
 function changebg() {
     if (document.body.style.backgroundColor == ''){
-        document.body.style.backgroundColor = 'tomato'
+        document.body.style.backgroundColor = 'teal'
     }
     else{
         document.body.style.backgroundColor = ''
