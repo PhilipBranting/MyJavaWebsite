@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaktiv hemsida</title>
+    <!-- linking html index with css and javascript -->
+    <link rel ="stylesheet" href="index.css">
+    <script src="index.js"></script>
+
+</head>
+<body>
+    <!-- making my header with no style so I can change the class later with style -->
+    <div class="random" id="fin">
+        <!-- making space for my goodvibes text -->
+        <h1 id="rubrik"></h1>
+        <!-- making space for my clock text -->
+        <p id="showtime"></p>
+        <!-- here is my image so that I can change src later with id = 'image' -->
+        <img id = 'image' src="Rainmeter_menmOYrbo0.png" alt="Error, could not load picture.">
+    </div>
+
+    <!-- here is my center div where I have all my buttons -->
+    <div class="centerdiv">
+        
+        <div>
+            <div style = 'display: flex; align-items: center;'>
+                <button class="button" onclick="changebg()">Change bg</button>
+                <button class="button" onclick="changepic()">Change picture</button>
+                <button class="button" onclick="header()">Header</button>
+            </div>
+
+            <div style = 'display: flex; align-items: center;'>
+                <button class="button" onclick="goodvibes()">Good vibes</button>
+                <button class="button" onclick="hidepic()">Hide picture</button>
+                <button class="button" onclick="removeheader()">Remove header</button>
+            </div>
+
+            <div style = 'display: flex; align-items: center;'>
+                <button class="button" onclick="showtime()">Time</button>
+                <button class="button" onclick="showpic()">Show picture</button>
+                <button class="button" onclick="showheader()">Show header</button>
+            </div>
+        </div>
+
+        <p id='note'></p>
+        
+    </div>
+    <div>
+        
+    </div>
+
+</body>
+</html>

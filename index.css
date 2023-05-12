@@ -1,0 +1,67 @@
+/* to make sure we don't have any gaps between our div and sides */
+body{
+    margin: 0;
+}
+
+/* this is to make the centerdiv/container for the buttons look good and position the way we want */
+.centerdiv{
+    position: absolute;
+    background-color: rgb(250, 239, 224);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    box-shadow: 10px 10px 5px rgb(173, 216, 230 , 0.4);
+    border-radius: 15px;
+}
+
+
+/* this is for how the button looks and will act in some cases */
+.button{
+    background-color: aqua;
+    height: 60px;
+    width: 100px;
+    border: 3px solid teal;
+    border-radius: 10px;
+    margin: 20px 45px 20px 45px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+/* this is for when you hover the buttondiv, it will change color and have a animation */
+.button:hover{
+    background-color: thistle;
+    border: 3px solid purple;
+    transform: translateY(-4px);
+
+}
+
+/* this is only here to make sure that the picture and text does not get messed up after pressing header again */
+#fin{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+/* this will make it so when we press the "Header" button it will have the style and position we want */
+.header{
+    background-color: darkgray;
+    display: flex;
+    position: absolute;
+    align-self: flex-start;
+    justify-content: 'center';
+    align-items: center;
+    width: 100%;
+}
+
+/* this is for my image so it doesn't change size when we are pressing the buttons */
+#image{
+    height: 100px;
+    width: 150px;
+}
+
+
+#note{
+    position: absolute; 
+    margin-top: 340px;
+}
