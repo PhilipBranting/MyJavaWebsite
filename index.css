@@ -52,6 +52,7 @@ body{
     justify-content: 'center';
     align-items: center;
     width: 100vw;
+    height: 25vh;
 }
 
 /* this is for my image so it doesn't change size when we are pressing the buttons */
@@ -64,4 +65,7 @@ body{
 #note{
     position: absolute; 
     margin-top: 340px;
+    color: deeppink;
+    font-size: 24;
+    font-family: 'Courier New', Courier, monospace;
 }
