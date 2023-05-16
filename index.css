@@ -19,7 +19,6 @@ body{
     border-radius: 15px;
 }
 
-
 /* this is for how the button looks and will act in some cases */
 .button{
     background-color: aqua;
@@ -37,7 +36,6 @@ body{
     background-color: thistle;
     border: 3px solid purple;
     transform: translateY(-4px);
-
 }
 
 /* this is only here to make sure that the picture and text does not get messed up after pressing header again */
@@ -65,14 +63,13 @@ body{
     width: auto;
 }
 
-
+/* some beautiful adjustments to my note */
 #note{
-    position: absolute; 
     color: deeppink;
     font-family: 'Courier New', Courier, monospace;
 }
 
-
+/* a div to place the note on the bottom and be responsiv */
 #thankyounote{
     position: absolute;
     top: 90%;
