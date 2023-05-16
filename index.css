@@ -3,11 +3,15 @@ body{
     margin: 0;
 }
 
+#rubrik, #showtime, #note{
+    font-size: 3vh;
+}
+
 /* this is to make the centerdiv/container for the buttons look good and position the way we want */
 .centerdiv{
     position: absolute;
     background-color: rgb(250, 239, 224);
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -19,11 +23,11 @@ body{
 /* this is for how the button looks and will act in some cases */
 .button{
     background-color: aqua;
-    height: 60px;
-    width: 100px;
+    height: 50px;
+    width: 80px;
     border: 3px solid teal;
     border-radius: 10px;
-    margin: 20px 45px 20px 45px;
+    margin: 2vh 2vw 2vh 2vw;
     transition: all 0.5s;
     cursor: pointer;
 }
@@ -52,20 +56,29 @@ body{
     justify-content: 'center';
     align-items: center;
     width: 100vw;
-    height: 25vh;
+    height: 28vh;
 }
 
 /* this is for my image so it doesn't change size when we are pressing the buttons */
 #image{
-    height: 100px;
-    width: 150px;
+    height: 15vh;
+    width: auto;
 }
 
 
 #note{
     position: absolute; 
-    margin-top: 340px;
     color: deeppink;
-    font-size: 24;
     font-family: 'Courier New', Courier, monospace;
+}
+
+
+#thankyounote{
+    position: absolute;
+    top: 90%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    min-width: 300px;
+    width: 37vw;
+    height: 10vh;
 }
