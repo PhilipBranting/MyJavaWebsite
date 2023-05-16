@@ -11,6 +11,8 @@
 
 </head>
 <body>
+
+<div class="container">
     <!-- making my header with no style so I can change the class later with style -->
     <div class="random" id="fin">
         <!-- making space for my goodvibes text -->
@@ -18,38 +20,37 @@
         <!-- making space for my clock text -->
         <p id="showtime"></p>
         <!-- here is my image so that I can change src later with id = 'image' -->
-        <img id = 'image' src="Rainmeter_menmOYrbo0.png" alt="Error, could not load picture.">
+        <img id = 'image' src="Rainmeter_menmOYrbo0.png" sytle='width=100%' alt="Error, could not load picture.">
     </div>
 
     <!-- here is my center div where I have all my buttons -->
     <div class="centerdiv">
-        
         <div>
+            <!-- this is the first row of buttons and they have align-items center so that they stay centered -->
             <div style = 'display: flex; align-items: center;'>
                 <button class="button" onclick="changebg()">Change bg</button>
                 <button class="button" onclick="changepic()">Change picture</button>
                 <button class="button" onclick="header()">Header</button>
             </div>
-
+            <!-- this is the second row of buttons and they have align-items center so that they stay centered aswell -->
             <div style = 'display: flex; align-items: center;'>
                 <button class="button" onclick="goodvibes()">Good vibes</button>
                 <button class="button" onclick="hidepic()">Hide picture</button>
                 <button class="button" onclick="removeheader()">Remove header</button>
             </div>
-
+            <!-- we already know -->
             <div style = 'display: flex; align-items: center;'>
                 <button class="button" onclick="showtime()">Time</button>
                 <button class="button" onclick="showpic()">Show picture</button>
                 <button class="button" onclick="showheader()">Show header</button>
             </div>
-        </div>
-
-        <p id='note'></p>
-        
+        </div> 
     </div>
-    <div>
-        
-    </div>
+</div>
 
+<!-- a little div for my beautiful note -->
+<div id="thankyounote">
+    <p id='note'></p>
+</div>
 </body>
 </html>
