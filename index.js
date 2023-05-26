@@ -58,41 +58,54 @@ function changepic(){
     }
 }
 
-
+// this creates the function hidepic()
 function hidepic(){
+    // this if statement checks if currentImage is equal to image1 or image2 and if True, then will make it so that it wont display the image with id 'image'
     if (currentImage == image1 || currentImage == image2){
         document.getElementById('image').style.display = 'none';
     }
 }
 
+
+// this creates the function showpic() and will do the opposite of hidepic()
 function showpic(){
+    // this checks if the image with id 'image' is not displaying, if that is True it will turn in into a flex object so that it aligns with the other elements
     if (document.getElementById('image').style.display == 'none'){
         document.getElementById('image').style.display = 'flex';
     }
 }
 
 
+// this function is the header() and it will create a header and align everything center that is in it
 function header(){
-    if(document.getElementById('fin').classList == 'random'){
-        document.getElementById('fin').classList.remove('random');
-        document.getElementById('fin').classList.add('header');
+    // if div with id 'placeholder' has the class 'random' then remove the class 'random' and give it the new class 'header'
+    if(document.getElementById('placeholder').classList == 'random'){
+        document.getElementById('placeholder').classList.remove('random');
+        document.getElementById('placeholder').classList.add('header');
     }
-    else if(document.getElementById('fin').classList == 'header'){
-        document.getElementById('fin').classList.remove('header');
-        document.getElementById('fin').classList.add('random');
+    // if that wasnt True then it will check if div with id 'placeholder' has the class header and if thats True then we will remove the class 'header' and give it the class 'random' again
+    else if(document.getElementById('placeholder').classList == 'header'){
+        document.getElementById('placeholder').classList.remove('header');
+        document.getElementById('placeholder').classList.add('random');
     }
 }
 
+
+// this function is for the button to remove the header
 function removeheader(){
-    if(document.getElementById('fin').classList == 'header'){
-        document.getElementById('fin').style.display ='none'
+    // now this will check if the div with id 'placeholder' has class 'header', if thats True it will make the display = 'none' and that hides the element
+    if(document.getElementById('placeholder').classList == 'header'){
+        document.getElementById('placeholder').style.display ='none'
     }
 }
 
+
+// this is a function opposite of the removeheader() function and will show the header
 function showheader(){
-    if(document.getElementById('fin').style.display == 'none'){
-        document.getElementById('fin').style.display = 'flex'
+    // instead of checking if the div with id 'placeholder' has a class, this checks if the display = 'none' and if thats true, we will turn it into flex and that will show the div
+    if(document.getElementById('placeholder').style.display == 'none'){
+        document.getElementById('placeholder').style.display = 'flex'
+        // this is also to change the id 'note' that we want you to see after pressing every button. It changes the content with .innerHTML
         document.getElementById('note').innerHTML = 'Thank you for using our website! We hope that it was a pleasent experience and that you will be returning.'
     }
-
 }
