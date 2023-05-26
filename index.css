@@ -3,6 +3,7 @@ body{
     margin: 0;
 }
 
+/* this changes the rubrik, showtime(klockan), och note to always be 3 % of the height of the viewport */
 #rubrik, #showtime, #note{
     font-size: 3vh;
 }
@@ -11,35 +12,74 @@ body{
 .centerdiv{
     position: absolute;
     background-color: rgb(250, 239, 224);
+    /* this puts the div in the center */
     top: 60%;
     left: 50%;
+    /* with help of this */
     transform: translate(-50%, -50%);
     display: flex;
+    /* this creates the shadow behind the box */
     box-shadow: 10px 10px 5px rgb(173, 216, 230 , 0.4);
     border-radius: 15px;
 }
 
+
 /* this is for how the button looks and will act in some cases */
 .button{
     background-color: aqua;
-    height: 50px;
-    width: 80px;
+    height: 40px;
+    width: 70px;
     border: 3px solid teal;
     border-radius: 10px;
     margin: 2vh 2vw 2vh 2vw;
+    /* this makes it so that all the transitions will have the speed 0.5 seconds */
     transition: all 0.5s;
+    /* when we hover the divs with 'button' then our mouse will be a pointer */
     cursor: pointer;
 }
+
+/* this make it so when we are below 300px width or below 500px height, the css inside will be applied */
+@media screen and (max-width: 300px) , (max-height: 500px){
+/* in here we only changed the height and width */
+    .button{
+        background-color: aqua;
+        height: 30px;
+        width: 60px;
+        border: 3px solid teal;
+        border-radius: 10px;
+        margin: 2vh 2vw 2vh 2vw;
+        transition: all 0.5s;
+        cursor: pointer;
+        }
+        
+    }
+/* this make it so when we are above 1024px width or above 800px height, the css inside will be applied */
+@media screen and (min-width:1024px) , (min-height: 800px){
+    /* in here we only changed the height and width */
+    .button{
+        background-color: aqua;
+        height: 50px;
+        width: 80px;
+        border: 3px solid teal;
+        border-radius: 10px;
+        margin: 2vh 2vw 2vh 2vw;
+        transition: all 0.5s;
+        cursor: pointer;
+        }
+        
+    }
 
 /* this is for when you hover the buttondiv, it will change color and have a animation */
 .button:hover{
     background-color: thistle;
     border: 3px solid purple;
+    /* this makes it so the div moves up 4px on the Y axis */
     transform: translateY(-4px);
+
 }
 
 /* this is only here to make sure that the picture and text does not get messed up after pressing header again */
-#fin{
+#placeholder{
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -75,6 +115,7 @@ body{
     top: 90%;
     left: 53%;
     transform: translate(-50%, -50%);
+    /* this makes it so that out div wont get smaller than 300px width. This makes it so that our text doesnt get wierd */
     min-width: 300px;
     width: 37vw;
     height: 10vh;
